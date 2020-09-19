@@ -1,0 +1,44 @@
+{
+  "private": true,
+  "name": "@project/bar",
+  "version": "0.1.0",
+  "scripts": {
+    "precommit": "lint-staged",
+    "build": "react-app-rewired build",
+    "eject": "react-scripts eject",
+    "start": "cross-env CI=true react-app-rewired start",
+    "test": "react-app-rewired test"
+  },
+  "dependencies": {
+    "@shared/components": "*"
+  },
+  "peerDependencies": {
+    "cra-template-typescript": "1.0.3",
+    "customize-cra": "^1.0.0",
+    "react": "^16.13.1",
+    "react-app-rewired": "^2.1.6",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "lint-staged": {
+    "*.{tsx,ts}": [
+      "eslint --fix",
+      "git add"
+    ]
+  }
+}
