@@ -61,8 +61,8 @@ This project is under the MIT license. See the [LICENSE](https://github.com/doug
 
 ## :books: Inspiration
 
-[Micro Frontends](https://martinfowler.com/articles/micro-frontends.html)
-[5 Steps to Turn a Random React Application Into a Micro Front-End](https://medium.com/better-programming/5-steps-to-turn-a-random-react-application-into-a-micro-frontend-946718c147e7)
+- [Micro Frontends](https://martinfowler.com/articles/micro-frontends.html)
+- [5 Steps to Turn a Random React Application Into a Micro Front-End](https://medium.com/better-programming/5-steps-to-turn-a-random-react-application-into-a-micro-frontend-946718c147e7)
 
 ---
 
