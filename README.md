@@ -42,7 +42,11 @@ This project was developed with the following technologies:
 
 ## :information_source: How To Use
 
-To clone and run this application, you'll need [Git](https://git-scm.com), [Node.js v10.16][nodejs] or higher + [Yarn v1.13][yarn] or higher installed on your computer. From your command line:
+To clone and run this application, you'll need [Git](https://git-scm.com), [Node.js v10.16][nodejs] or higher + [Yarn v1.13][yarn] or higher installed on your computer.
+
+Create a `.env` file based on the `.env.example` contained in each module of the project and fill in the necessary information.
+
+From your command line:
 
 ```bash
 # Clone this repository
@@ -51,8 +55,23 @@ $ git clone https://github.com/douglasdeoliveira/react-micro-frontends
 # Install dependencies
 $ cd react-micro-frontends && yarn
 
-# Run
+# Run all micro-frontends together
 $ yarn start
+```
+
+Another examples:
+
+```bash
+# Run a specific micro-frontend
+# yarn start:MODULE_NAME (see package.json)
+$ yarn start:foo
+
+# Install global dependency on the project
+$ yarn add react -W
+
+# Install dependency on a specific module
+# yarn workspace MODULE_NAME YARN_COMMAND
+$ yarn workspace @project/foo add react
 ```
 
 ## :memo: License
